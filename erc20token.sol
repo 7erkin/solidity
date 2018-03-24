@@ -9,12 +9,12 @@ pragma solidity ^0.4.0;
 //    function transferFrom(address from, address to, uint tokens) public returns(bool);
 //}
 
-contract HomeTask1Contract{
+contract token{
     address owner;
     uint supply;
     mapping(address => uint) public balance;
     mapping(address => mapping(address => uint)) public approve;
-    function HomeTask1Contract(uint supply_) public{
+    function token(uint supply_) public{
         owner = msg.sender;
         balance[msg.sender] = supply_;
         supply = supply_;
