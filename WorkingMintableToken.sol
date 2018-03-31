@@ -75,6 +75,7 @@ contract MyMintableToken is ERC20token, Ownable{
 
     }
     function mint(uint _amount) onlyOwner public{
+        balances[owner] = balances.add(_amount);
         totalSupply = totalSupply.add(_amount);
     }
 }
